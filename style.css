@@ -39,7 +39,7 @@ body {
   flex-grow: 1
 }
 
-.main__add-form-wrapper {
+.main__add-tasks-form-wrapper {
   display: flex;
 }
 
@@ -73,7 +73,7 @@ button:hover {
 /* Heading */
 
 h3,
-label[for="new-task"] {
+label[for="main__new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -102,12 +102,12 @@ input[type="text"]:focus {
 
 /* New Task */
 
-label[for="new-task"] {
+label[for="main__new-task"] {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+input#main__new-task {
   width: 318px;
 }
 
@@ -162,7 +162,7 @@ button.main__delete-button img:hover {
 
 /* Completed */
 
-ul#completed-tasks label {
+ul#main__completed-tasks-form label {
   text-decoration: line-through
   color: #888;
 }
