@@ -27,7 +27,7 @@
   .header {
     text-align: center;
   }
-  
+
 }
 
 .main {
@@ -47,16 +47,16 @@
 }
 
 .main__ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .main__li, .main__h3 {
-  list-style:none;
+  list-style: none;
 }
 
 .main__input, .main__button{
-  outline:none;
+  outline: none;
 }
 
 .main__button {
@@ -173,14 +173,14 @@
 /* Edit Task */
 
 .main__ul .main__li .main__input_text {
-  display:none
+  display: none
 }
 
 .main__ul .main__form_edit .main__input_text {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .main__ul .main__form_edit .main__label {
-  display:none;
+  display: none;
 }
