@@ -10,62 +10,75 @@
           charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__img"
            src="./eisenhower-matrix.jpg">
-      <a class="header__href"
-          href="https://goal-life.com/page/method/matrix-eisenhower">
+      <nav class="header__href">
+        <a href="https://goal-life.com/page/method/matrix-eisenhower">
           Want more details?
-      </a>
-    </div>
-    <div class="main">
-      <p id="main__form_add">
-        <label class="main__label_add-task" for="main__new-task">Add Item</label>
-        <div class="main__form-wrapper_add">
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="main__form_add">
+        <h3 class="main__h3_add">Add Item</h3>
+        <div class="main__add-task-wrapper">
           <input id="main__new-task"
-                 class="main__task main__input main__input_text"
+                 class="main__input main__input_text main__task"
                  type="text">
           <button class="main__button main__button_add">Add</button>
         </div>
-      </p>
-      <h3 class="main__h3">Todo</h3>
-      <ul id="main__list_incomplete"
-          class="main__ul">
-        <li class="main__li">
-          <input class="main__input main__input_checkbox" type="checkbox">
-          <label class="main__label main__task">Pay Bills</label>
-          <input class="main__input main__input_text" type="text">
-          <button class="main__button main__button_edit">Edit</button>
-          <button class="main__button main__button_delete">
-            <img class="main__button-image_delete" src="./remove.svg">
-          </button></li>
-        <li class="main__li main__form_edit">
-          <input class="main__input main__input_checkbox" type="checkbox">
-          <label class="main__label main__task">Go Shopping</label>
-          <input type="text"
-                 value="Go Shopping"
-                 class="main__task main__input main__input_text">
-          <button class="main__button main__button_edit">Save</button>
-          <button class="main__button main__button_delete">
-            <img class="main__button-image_delete" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-      <h3 class="main__h3">Completed</h3>
-      <ul id="main__list_completed"
-          class="main__ul">
-        <li class="main__li"><input class="main__input main__input_checkbox" type="checkbox"
+      </section>
+      <section>
+        <h3 class="main__h3">Todo</h3>
+        <ul id="main__list_incomplete"
+            class="main__ul">
+          <li class="main__li">
+            <input class="main__input main__input_checkbox"
+                   type="checkbox">
+            <label class="main__label main__task">Pay Bills</label>
+            <input class="main__input main__input_text"
+                   type="text">
+            <button class="main__button main__button_edit">Edit</button>
+            <button class="main__button main__button_delete">
+              <img class="main__button-image_delete"
+                   src="./remove.svg">
+            </button></li>
+          <li class="main__li main__form_edit">
+            <input class="main__input main__input_checkbox"
+                   type="checkbox">
+            <label class="main__label main__task">Go Shopping</label>
+            <input type="text"
+                   value="Go Shopping"
+                   class="main__input main__input_text main__task">
+            <button class="main__button main__button_edit">Save</button>
+            <button class="main__button main__button_delete">
+              <img class="main__button-image_delete"
+                   src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="main__h3">Completed</h3>
+        <ul id="main__list_completed"
+            class="main__ul">
+          <li class="main__li">
+            <input class="main__input main__input_checkbox"
+                   type="checkbox"
                    checked>
-          <label class="main__label main__task">See the Doctor</label>
-          <input type="text"
-                 class="main__task main__input main__input_text">
-          <button class="main__button main__button_edit">Edit</button>
-          <button class="main__button main__button_delete">
-            <img class="main__button-image_delete" src="./remove.svg">
-          </button>
-        </li>
-      </ul>
-    </div>
+            <label class="main__label main__task">See the Doctor</label>
+            <input type="text"
+                   class="main__input main__input_text main__task">
+            <button class="main__button main__button_edit">Edit</button>
+            <button class="main__button main__button_delete">
+              <img class="main__button-image_delete"
+                   src="./remove.svg">
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>

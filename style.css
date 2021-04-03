@@ -42,7 +42,7 @@
   flex-grow: 1;
 }
 
-.main__form-wrapper_add {
+.main__add-task-wrapper {
   display: flex;
 }
 
@@ -78,7 +78,7 @@
 /* Heading */
 
 .main__h3,
-.main__label_add-task {
+.main__h3_add {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -107,7 +107,7 @@
 
 /* New Task */
 
-.main__label_add-task {
+.main__h3_add {
   display: block;
   margin: 0 0 20px;
 }
