@@ -51,11 +51,13 @@
   padding: 0px;
 }
 
-.main__li, .main__h3 {
+.main__li,
+.main__h3 {
   list-style: none;
 }
 
-.main__input, .main__button{
+.main__input,
+.main__button {
   outline: none;
 }
 
@@ -145,7 +147,7 @@
   width: 226px;
 }
 
-.main__li > .main__input_text {
+.main__input_text {
   width: 226px;
 }
 
@@ -165,22 +167,29 @@
 
 /* Completed */
 
-#main__list_completed .main__label {
+#main__list_completed
+.main__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.main__ul .main__li .main__input_text {
+.main__ul
+.main__li
+.main__input_text {
   display: none;
 }
 
-.main__ul .main__form_edit .main__input_text {
+.main__ul
+.main__form_edit
+.main__input_text {
   display: inline-block;
   width: 224px;
 }
 
-.main__ul .main__form_edit .main__label {
+.main__ul
+.main__form_edit
+.main__label {
   display: none;
 }
