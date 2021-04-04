@@ -1,6 +1,3 @@
-
-/* Basic Style */
-
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -36,12 +33,6 @@
   margin: 0 auto 0;
 }
 
-.main__task {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1;
-}
-
 .main__add-task-wrapper {
   display: flex;
 }
@@ -51,14 +42,15 @@
   padding: 0px;
 }
 
-.main__li,
 .main__h3 {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
   list-style: none;
-}
-
-.main__input,
-.main__button {
-  outline: none;
 }
 
 .main__button {
@@ -69,26 +61,26 @@
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
+  vertical-align: middle;
 }
 
 .main__button:hover {
   color: #3a3A3a;
 }
 
-/* Heading */
-
-.main__h3,
 .main__h3_add {
   color: #333;
   font-weight: 700;
   font-size: 15px;
   border-bottom: 2px solid #333;
   padding: 30px 0 10px;
-  margin: 0;
   text-transform: uppercase;
+  display: block;
+  margin: 0 0 20px;
 }
 
-.main__input_text {
+.main__input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,20 +91,19 @@
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
+  flex-grow: 1;
+  outline: none;
+  width: 226px;
+  vertical-align: middle;
 }
 
-.main__input_text:focus {
+.main__input:focus {
   color: #333;
 }
 
 /* New Task */
 
-.main__h3_add {
-  display: block;
-  margin: 0 0 20px;
-}
-
-#main__new-task {
+.main__input_add {
   width: 318px;
 }
 
@@ -130,14 +121,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  list-style: none;
 }
 
-.main__li > * {
-  vertical-align: middle;
-}
-
-.main__input_checkbox {
+.main__checkbox {
   margin: 0 10px;
+  outline: none;
+  vertical-align: middle;
 }
 
 .main__label {
@@ -145,29 +135,29 @@
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-}
-
-.main__input_text {
-  width: 226px;
+  display: inline-block;
+  flex-grow: 1;
+  vertical-align: middle;
 }
 
 .main__button_delete:hover {
   color: #CF2323;
 }
 
-.main__button-image_delete {
+.main__delete-button-image {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
+  vertical-align: middle;
 }
 
-.main__button-image_delete:hover {
+.main__delete-button-image:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#main__list_completed
+.main__ul_completed
 .main__label {
   text-decoration: line-through;
   color: #888;
@@ -177,19 +167,19 @@
 
 .main__ul
 .main__li
-.main__input_text {
+.main__input {
   display: none;
 }
 
 .main__ul
-.main__form_edit
-.main__input_text {
+.main__li_edit
+.main__input {
   display: inline-block;
   width: 224px;
 }
 
 .main__ul
-.main__form_edit
+.main__li_edit
 .main__label {
   display: none;
 }
